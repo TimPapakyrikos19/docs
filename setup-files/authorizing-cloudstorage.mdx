@@ -1,0 +1,73 @@
+---
+title: "Cloud Provider Authorization Single Tenant App"
+description: "This document describes the steps to complete corporate cloud provider authorization for eShare using custom single tenant app."
+---
+
+### **Authorization for Cloud Storage services - Required **
+
+- Sign in to your eShare portal as administrator 
+- Navigate to “Admin console \> Corporate cloud providers” tab 
+- Click on the “Add” button and select “Graph”  
+
+<img
+  src="/images/Picture1.png"
+  alt="Picture1 Pn"
+  title="Picture1 Pn"
+  className="mx-auto"
+  style={{ width:"33%" }}
+/>
+
+- Input your Microsoft 365 Tenant ID and click on “Get own app” button 
+
+<img
+  src="/images/Picture2.png"
+  alt="Picture2 Pn"
+  title="Picture2 Pn"
+  className="mx-auto"
+  style={{ width:"63%" }}
+/>
+
+- For “Application ID”, input the application (client) ID of the application registered in your Microsoft 365 tenant for eShare
+- For “Thumbprint of your certificate”, input the thumbprint of the certificate uploaded to Microsoft Entra console for the eShare application
+- Open the private key (.key file) of the above certificate in Notepad, copy the text and paste it in the “Private key” section.
+- When done, click on “Use own app”
+
+<img
+  src="/images/Picture3.png"
+  alt="Picture3 Pn"
+  title="Picture3 Pn"
+  className="mx-auto"
+  style={{ width:"47%" }}
+/>
+
+- A green bar flashes on the screen indicating the corporate cloud provider was successfully enabled.
+- Verify that OneDrive is now enabled and available for further configuration.
+
+### Authorization for Document Labels API – Strongly Recommended
+
+Authorization for Document Labels API allows eShare to read Microsoft Sensitivity Labels deployed in your tenant and the labels applied to documents, SharePoint sites, Teams, Groups, etc.
+
+- Navigate to “Admin console \> Corporate cloud providers” tab
+- Click on the slider for Document Labels APIs to change it from “OFF” to “ON”
+
+<img
+  src="/images/Picture4.png"
+  alt="Picture4 Pn"
+  title="Picture4 Pn"
+  className="mx-auto"
+  style={{ width:"58%" }}
+/>
+
+- You will be redirected to your Microsoft 365 tenant to sign in, if you are not already signed in
+- A prompt is displayed indicating the permissions for which the custom tenant app is being authorized
+
+  <img
+    src="/images/Picture5.png"
+    alt="Picture5 Pn"
+    title="Picture5 Pn"
+    className="mx-auto"
+    style={{ width:"43%" }}
+  />
+- Click on “Accept” to continue with the authorization process
+- Upon successful completion, you will be redirected back to the eShare admin portal. The feature status should now show ON status
+- Switch to “Sensitivity Labels” tab to confirm the MIP labels in your tenant are displayed. Click on “Refresh Labels” button if labels are not immediately visible.
