@@ -22,6 +22,12 @@
             ]
           },
           {
+            "group": "Setup and Deployment",
+            "pages": [
+              "setup-files/authorizing-cloudstorage"
+            ]
+          },
+          {
             "group": "How To",
             "pages": [
               "essentials/settings",
@@ -35,12 +41,6 @@
               "essentials/code",
               "essentials/images",
               "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "Setup and Deployment",
-            "pages": [
-              "setup-files/authorizing-cloudstorage"
             ]
           }
         ]
