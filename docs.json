@@ -40,9 +40,7 @@
           {
             "group": "Setup and Deployment",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "setup-files/authorizing-cloudstorage"
             ]
           }
         ]
