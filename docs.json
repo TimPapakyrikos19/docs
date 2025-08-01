@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "willow",
+  "name": "eSHARE Documentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#006BD6",
+    "light": "#4792DD",
+    "dark": "#0A0A0A"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -22,14 +22,14 @@
             ]
           },
           {
-            "group": "Customization",
+            "group": "How To",
             "pages": [
               "essentials/settings",
               "essentials/navigation"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Release Notes",
             "pages": [
               "essentials/markdown",
               "essentials/code",
@@ -38,7 +38,7 @@
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Setup and Deployment",
             "pages": [
               "ai-tools/cursor",
               "ai-tools/claude-code",
