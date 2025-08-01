@@ -89,8 +89,8 @@
     }
   },
   "logo": {
-    "light": "/logo/Wordmark White.svg",
-    "dark": "/logo/Workmark Black.svg"
+    "light": "/logo/Wordmark Black.svg",
+    "dark": "/logo/Workmark White.svg"
   },
   "navbar": {
     "links": [
